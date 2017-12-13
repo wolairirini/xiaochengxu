@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			#game{background: url("image/开始背景.png");width: 320px;height: 568px;margin: 30px auto;position: relative;overflow: hidden;}
+			#game .score,#game .life{position: absolute;top: 20px;display: none;z-index: 1000;}
+			#game .score{left: 0;}
+			#game .life{right: 0;}
+			#game>img{position: absolute;}
+		</style>
+	</head>
+	<body>
+		<div id="game">
+			<div class="score">
+				得分：<span>0</span>
+			</div>
+			<div class="life">
+				<img src="image/heart.png"/>
+				<img src="image/heart.png"/>
+				<img src="image/heart.png"/>
+			</div>
+		</div>
+	</body>
+</html>
+<!--<script src="js/require.js" defer async="true" data-main="js/app" type="text/javascript" charset="utf-8"></script>-->
+
+<script src="js/list/Bullet.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/list/Enemy.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/list/AllEnemy.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/list/Engine.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/list/Hero.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/require.js" type="text/javascript" charset="utf-8"></script>

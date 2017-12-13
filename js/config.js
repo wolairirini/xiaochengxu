@@ -1,0 +1,13 @@
+require.config({
+	baseUrl:"js",
+	paths:{
+		"AllEnemy":"list/AllEnemy",
+		"Bullet":"list/Bullet",
+		"Enemy":"list/Enemy",
+		"Engine":"list/Engine",
+		"Hero":"list/Hero"
+	},
+	shim:{
+		"AllEnemy":"Enemy"
+	}
+})
